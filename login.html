@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <title>mongodb</title>
+    </head>
+<body class="bg-info">
+<div  class="container p-3">
+<form method="post">
+    Name<input type="text" name="username" class="form-control">
+    Employeeid<input type="text" name="eid" class="form-control">
+    E-mail<input type="text" name="email" class="form-control">
+    TYPE OF JOB : <input type="radio" name="type" id="r1" class="form-check-input" value="Part time">part time
+    <input type="radio" name="type" id="r2" value="Full time" class="form-check-input">full time<br>
+    Branch
+    <select name="branch" class="form-control mb-4">
+        <option value="1">CHOOSE-JOB-TYPE</option>
+        <option value="sales">Sales</option>
+        <option value="service">Service</option>
+    </select>
+    <input type="submit" name="login" value="Insert" class="btn bg-primary" formaction="http://localhost:4000/insert"/>
+    <input type="submit" name="show" value="Retrive(show)" class="btn bg-primary" formaction="http://localhost:4000/retrive"/>
+    <input type="submit" name="login" value="Update"  class="btn bg-primary" formaction="http://localhost:4000/update"/>
+    <input type="submit" name="login" value="Delete" class="btn bg-primary" formaction="http://localhost:4000/delete"/>   
+    <input type="submit" name="login" value="sales" class="btn bg-primary" formaction="http://localhost:4000/sales"/>                                      
+</form>
+</div>
+</body>
+</html>
